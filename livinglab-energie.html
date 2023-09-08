@@ -2,10 +2,15 @@
 <html>
   <head>
     <meta charset="utf8">
-    <script src="https://grist-static.com/csv-viewer.js"></script>
+    <script src="https://grist-static.com/latest.js"></script>
   </head>
   <body>
-    <csv-viewer initial-data="catalog_act.grist" name="Catalogue des données des living labs ACT" singlePage="true" style="height: 500px; border: 1px solid green">
-    </csv-viewer>
+    <script>
+      bootstrapGrist({
+        initialFile: 'catalog_act.grist',
+        name: 'Catalogue des données des living labs ACT',
+        singlePage: true
+      });
+    </script>
   </body>
 </html>
